@@ -1,10 +1,12 @@
 package quizconsoleapp.services;
 
+import java.util.Scanner;
 import quizconsoleapp.models.QuestionModel;
 
 public class QuestionService {
     // We are referencing the QuestionModel class
     QuestionModel[] questions = new QuestionModel[5];
+    String[] userSelections = new String[5];
 
     public QuestionService() {
         questions[0] = new QuestionModel(1, "What is the capital of India?",
@@ -24,5 +26,20 @@ public class QuestionService {
             System.out.println(q);
             System.out.println();
         }
+    }
+
+    public void playQuiz() {
+        Scanner sc = new Scanner(System.in);
+        int i = 0;
+        for (QuestionModel q : questions) {
+            System.out.println("Question " + q.getQuestionId());
+            System.out.println(q.getQuestion());
+            System.out.println(q.getOptions());
+            System.out.println("Enter your answer: ");
+            userSelections[i] = sc.nextLine();
+            i++;
+        }
+        // Closes the scanner to avoid the resource leak warning
+        sc.close();
     }
 }

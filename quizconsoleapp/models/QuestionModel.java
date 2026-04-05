@@ -31,8 +31,9 @@ public class QuestionModel {
         this.question = question;
     }
 
-    public String[] getOptions() {
-        return options;
+    public String getOptions() {
+        return "option 1: " + this.options[0] + " option 2: " + this.options[1] + " option 3: " + this.options[2]
+                + " option 4: " + this.options[3];
     }
 
     public void setOptions(String[] options) {
@@ -52,5 +53,4 @@ public class QuestionModel {
         return "QuestionModel [questionId=" + questionId + ", question=" + question + ", options="
                 + Arrays.toString(options) + ", correctAnswer=" + correctAnswer + "]";
     }
-
 }
