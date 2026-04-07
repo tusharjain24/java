@@ -5,7 +5,7 @@ class A {
         System.out.println("A is showing");
     }
 
-    class B {
+    static class B {
         public void config() {
             System.out.println("B is showing");
         }
@@ -17,7 +17,8 @@ public class InnerClass {
         A a = new A();
         a.show();
 
-        A.B b = a.new B();
+        // A.B b = a.new B(); // if the inner class is not static
+        A.B b = new A.B(); // if the inner class is static
         b.config();
     }
 }
