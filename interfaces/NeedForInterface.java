@@ -16,6 +16,12 @@ class Laptop implements Computer {
     }
 }
 
+class Developer {
+    public void devlopApp(Computer obj) {
+        obj.code();
+    }
+}
+
 public class NeedForInterface {
     public static void main(String[] args) {
         Computer obj1 = new Laptop();
@@ -23,11 +29,5 @@ public class NeedForInterface {
         Developer dev = new Developer();
         dev.devlopApp(obj1);
         dev.devlopApp(obj2);
-    }
-}
-
-class Developer {
-    public void devlopApp(Computer obj) {
-        obj.code();
     }
 }
