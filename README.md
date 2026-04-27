@@ -36,6 +36,10 @@ Throughout this repository, we have created various Markdown (`.md`) files that 
 - [`ClassAndObjects.md`](objectorientedprogramming/ClassAndObjects.md): Theory of classes and objects in Object-Oriented Programming.
 - [`access-modifiers.md`](accessmodifiers/access-modifiers.md): Detailed explanation of `public`, `private`, `protected`, and default modifiers.
 - [`polymorphism.md`](objectorientedprogramming/polymorphism.md): Concept of polymorphism and dynamic method dispatch.
+- [`errors.md`](exceptions/errors.md): Explanation of compile-time, run-time, and logical errors in Java.
+- [`AbstractClass.md`](abstractclass/AbstractClass.md): Introduction to abstract classes and abstract methods.
+- [`TypesOfInterface.md`](interfaces/TypesOfInterface.md): Categorization of interfaces into Normal, Functional, and Marker.
+- [`Annotations.md`](annotations/Annotations.md): Explanation of annotations, their purposes, and how to create custom ones.
 
 ---
 
@@ -103,6 +107,31 @@ Follow this numbered sequence to explore the repository in a logical, step-by-st
 
 ### 13. Data Structures & Abstract Data Types
 36. [`dsa/AbstractDataType.java`](dsa/AbstractDataType.java)
+37. [`dsa/arrays/LinearSearch.java`](dsa/arrays/LinearSearch.java)
+38. [`dsa/arrays/BinarySearch.java`](dsa/arrays/BinarySearch.java)
+
+### 14. Exceptions & Errors
+39. Read [`exceptions/errors.md`](exceptions/errors.md) to understand different types of errors in Java.
+
+### 15. Abstract Classes & Interfaces
+40. Read [`abstractclass/AbstractClass.md`](abstractclass/AbstractClass.md).
+41. [`abstractclass/AbstractClass.java`](abstractclass/AbstractClass.java)
+42. [`interfaces/NeedForInterface.java`](interfaces/NeedForInterface.java)
+43. [`interfaces/InterfaceDemo.java`](interfaces/InterfaceDemo.java)
+44. Read [`interfaces/TypesOfInterface.md`](interfaces/TypesOfInterface.md).
+
+### 16. Inner Classes & Enums
+45. [`innerclass/InnerClass.java`](innerclass/InnerClass.java)
+46. [`innerclass/AnonymousInnerClass.java`](innerclass/AnonymousInnerClass.java)
+47. [`enums/EnumsDemo.java`](enums/EnumsDemo.java)
+
+### 17. Annotations & Lambda Expressions
+48. Read [`annotations/Annotations.md`](annotations/Annotations.md).
+49. [`annotations/AnnotationDemo.java`](annotations/AnnotationDemo.java)
+50. [`lambdaexpression/LambdaExpression.java`](lambdaexpression/LambdaExpression.java)
+
+### 18. Projects
+51. `quizconsoleapp/` project: A mini console-based quiz app. Entry point is [`quizconsoleapp/Main.java`](quizconsoleapp/Main.java).
 
 ---
 *Happy Coding! Feel free to explore, experiment, and break the code to learn.*
