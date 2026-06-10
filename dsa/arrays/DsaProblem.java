@@ -1,8 +1,6 @@
 package dsa.arrays;
 
-import java.util.Arrays;
-
-class ArrayOperations {
+public class DsaProblem {
     public int findLargestElement(int[] arr) {
         int LargestElementInArray = arr[0];
         for (int i : arr) {
@@ -51,13 +49,39 @@ class ArrayOperations {
         }
         return isArraySorted;
     }
-}
 
-public class LargestElementInAnArray {
-    public static void main(String[] args) {
-        ArrayOperations arrop = new ArrayOperations();
-        int[] arr = { 5, 4, 6, 7, 8 };
-        boolean result = arrop.isArraySortedInAscendingArray(arr);
-        System.out.println("Is array sorted in ascending order? " + result);
+    public void removeDuplicatesFromSortedArray(int[] arr) {
+        int i = 0;
+        if (arr.length < 2) {
+            return;
+        }
+        for (int j = i + 1; j < arr.length; j++) {
+            if (arr[i] != arr[j]) {
+                i++;
+                arr[i] = arr[j];
+            }
+        }
+        System.out.print("Array after removing duplicates: ");
+        for (int element : arr) {
+            System.out.print(element);
+        }
+    }
+
+    public void MoveZerosToEnd(int[] arr) {
+        int i = 0;
+        int arrayLength = arr.length;
+        for (int j = i + 1; j < arrayLength; j++) {
+            if (arr[i] != 0) {
+                i++;
+            }
+            if (arr[i] == 0 && arr[j] != 0) {
+                arr[i] = arr[j];
+                i++;
+                arr[j] = 0;
+            }
+        }
+        for (int j = 0; j < arr.length; j++) {
+            System.out.print(arr[j]);
+        }
     }
 }
